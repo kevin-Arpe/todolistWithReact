@@ -1,12 +1,14 @@
 import React, { Component } from 'react';
 import TodoListTemplate from './components/TodoListTemplate';
+import Form from './components/Form';
+import TodoItemList from './components/TodoItemList';
 
 class App extends Component {
   render() {
     return (
       <div>
-        <TodoListTemplate form={<div>이 안에 폼 타입이 들어올 예정.</div>}>
-          <div>템플릿 완성</div>
+        <TodoListTemplate form={<Form />}>
+          <TodoItemList />
         </TodoListTemplate>
       </div>
     );
